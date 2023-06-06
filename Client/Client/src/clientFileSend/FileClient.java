@@ -27,7 +27,7 @@ public class FileClient {
         this.mainClass = mainClass;
     }
 
-    public void File() {
+    public void file() {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 createAndShowGUI();
