@@ -29,13 +29,13 @@ public class Main {
             case "File":
                 System.out.println("Начинаем отправку файлов...");
                 FileClient client = new FileClient(serverIp, serverPort, Main.class);
-                client.File();
+                client.file();
                 break;
             case "Chat":
                 System.out.println("Начинаем диалог...");
-                ChatClient chat = new ChatClient(serverIp, serverPort);
-                chat.setmainClass(Main.class);
-                chat.Chat();
+                ChatClient chats = new ChatClient(serverIp, serverPort);
+                chats.setmainClass(Main.class);
+                chats.chat();
                 break;
             case "Quit":
                 System.out.println("Выполнение программы завершено");
