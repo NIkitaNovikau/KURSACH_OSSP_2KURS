@@ -19,7 +19,7 @@ public class FileServer {
         this.serverPort = serverPort;
     }
 
-    public static void Accept() {
+    public static void accept() {
         try (ServerSocket serverSocket = new ServerSocket(serverPort)) {
             System.out.println("Сервер запущен. Ожидание подключений...");
 
