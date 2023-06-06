@@ -31,13 +31,13 @@ public class Main {
             case "File":
                 System.out.println("Начинаем отправку файлов...");
                 FileServer client = new FileServer(serverPort,Main.class);
-                client.Accept();
+                client.accept();
                 break;
             case "Chat":
                 System.out.println("Начинаем диалог...");
                 ChatServer chat = new ChatServer(serverPort);
                 chat.setMainClass(Main.class);
-                chat.ChatServ();
+                chat.chatServ();
                 break;
             case "Quit":
                 System.out.println("Выполнение программы завершено");
