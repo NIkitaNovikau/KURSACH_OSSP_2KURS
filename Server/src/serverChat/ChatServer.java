@@ -17,7 +17,7 @@ public class ChatServer {
         this.mainClass = mainClass;
     }
 
-    public void ChatServ() {
+    public void chatServ() {
         try (ServerSocket serverSocket = new ServerSocket(serverPort);
              Socket clientSocket = serverSocket.accept();
              BufferedReader inputReader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
